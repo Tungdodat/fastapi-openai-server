@@ -20,6 +20,6 @@ openai = OpenAI(api_key=os.environ["OPENAI_API_KEY"])
 def create_chatkit_session():
     # Tạo session ChatKit mới
     session = openai.chatkit.sessions.create({
-        "workflow_id": "wf_your_workflow_id_here"  # thay bằng Workflow ID trong Agent Builder
+        "workflow_id": "wf_68f5d9e22bc881908eb75de2c117dab60616f00edcb41e00"  # thay bằng Workflow ID trong Agent Builder
     })
     return {"client_secret": session.client_secret}
