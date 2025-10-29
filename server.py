@@ -23,3 +23,6 @@ def create_chatkit_session():
         workflow_id="wf_68f5d9e22bc881908eb75de2c117dab60616f00edcb41e00"
     )
     return {"client_secret": session.client_secret}
+@app.get("/")
+def root():
+    return {"status": "running"}
